@@ -94,7 +94,7 @@ export default function DotGrid({ spacing = 71, size = 3, influenceRadius = 100 
   return (
     <canvas
       ref={canvasRef}
-      className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
+      className="pointer-events-none absolute inset-0 -z-10 overflow-hidden dark:bg-gray-800"
     />
   );
 }
