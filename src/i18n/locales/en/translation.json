@@ -1,0 +1,11 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Me",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Software Developer",
+    "subtitle": "English Version!"
+  }
+}

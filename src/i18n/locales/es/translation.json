@@ -1,0 +1,11 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "home": {
+    "title": "Desarrollador de Software",
+    "subtitle": "¡Versión en español!"
+  }
+}

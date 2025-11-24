@@ -1,3 +1,18 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* la animación que antes estaba en theme.extend → keyframes */
+@keyframes bgmove {
+    0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 0 100%, 0 100%;
+  }
+}
+
+/* la utility que antes estaba en theme.extend → animation */
+@utility animate-bgmove {
+  animation: bgmove 40s infinite;
+}
