@@ -2,6 +2,7 @@ import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import '../styles/Home.css';
+import Experience from "../components/Experience";
 
 export default function LandingEs() {
   return (
@@ -9,6 +10,8 @@ export default function LandingEs() {
       <NavBar /> 
       <Hero />
       <About />
+      <Experience />
+      {/*<Contact />*/}
     </div>
   );
 }
