@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import '../styles/Home.css';
 import Experience from "../components/Experience";
+import Projects from "../components/Projects";
 
 export default function LandingEs() {
   return (
@@ -11,6 +12,7 @@ export default function LandingEs() {
       <Hero />
       <About />
       <Experience />
+      <Projects />
       {/*<Contact />*/}
     </div>
   );
