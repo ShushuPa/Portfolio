@@ -1,4 +1,4 @@
-import { useRef, useState, type FormEvent } from 'react';
+import { useState, type FormEvent } from 'react';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
@@ -11,7 +11,7 @@ export default function Contact() {
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [copied, setCopied] = useState(false);
 
-  const myEmail = "tuemail@ejemplo.com"; 
+  const myEmail = "pablomaitini20@gmail.com"; 
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(myEmail);
@@ -19,23 +19,35 @@ export default function Contact() {
     setTimeout(() => setCopied(false), 2000);
   };
 
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }));
+  };
 
-const form = useRef<HTMLFormElement>(null);
-
-const handleSubmit = async (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
-    const serviceId = 'TU_SERVICE_ID';
-    const templateId = 'TU_TEMPLATE_ID';
-    const publicKey = 'TU_PUBLIC_KEY';
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+        console.error("Faltan las variables de entorno de EmailJS");
+        setSubmitStatus('error');
+        setIsSubmitting(false);
+        return;
+    }
 
     try {
         const templateParams = {
             from_name: formData.name,
             from_email: formData.email,
             message: formData.message,
+            to_name: 'Tu Nombre', 
         };
 
         await emailjs.send(serviceId, templateId, templateParams, publicKey);
@@ -49,27 +61,18 @@ const handleSubmit = async (e: FormEvent) => {
         setIsSubmitting(false);
         setTimeout(() => setSubmitStatus('idle'), 5000);
     }
-};
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }));
   };
 
   return (
     <section className="py-20 px-4 md:px-8 bg-background" id="contact">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-          
-          {/* Left Side: Title & Info */}
-          <div className="order-1">
+          <div className="order-1 md:order-2">
              <div className="mb-8">
                 <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
                   Get in Touch
                 </h2>
-                <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-transparent rounded-full"></div>
+                <div className="w-20 h-1 bg-gradient-to-l from-blue-400 to-transparent rounded-full"></div>
              </div>
 
              <p className="text-muted-foreground mb-8 leading-relaxed">
@@ -77,7 +80,6 @@ const handleSubmit = async (e: FormEvent) => {
                 a proposal, or just want to say hi, I'll try my best to get back to you!
              </p>
 
-             {/* Copy Email Box */}
              <div className="bg-slate-800/50 p-4 rounded-lg border border-slate-700 hover:border-blue-500 transition-colors duration-300">
                 <p className="text-sm text-gray-400 mb-2">Send me an email directly:</p>
                 <div className="flex items-center justify-between bg-slate-900 rounded px-4 py-3">
@@ -100,13 +102,10 @@ const handleSubmit = async (e: FormEvent) => {
                 </div>
              </div>
           </div>
-
-          {/* Right Side: Contact Form */}
-          <div className="order-2">
+          <div className="order-2 md:order-1">
             <form onSubmit={handleSubmit} className="bg-slate-800 p-8 rounded-2xl shadow-xl border border-slate-700/50">
               <div className="space-y-6">
                 
-                {/* Name Input */}
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                     Name
@@ -123,7 +122,6 @@ const handleSubmit = async (e: FormEvent) => {
                   />
                 </div>
 
-                {/* Email Input */}
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                     Email
@@ -140,7 +138,6 @@ const handleSubmit = async (e: FormEvent) => {
                   />
                 </div>
 
-                {/* Message Input */}
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
                     Message

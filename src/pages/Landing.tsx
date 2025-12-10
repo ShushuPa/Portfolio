@@ -6,9 +6,9 @@ import Experience from "../components/Experience";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 
-export default function LandingEs() {
+export default function Landing() {
   return (
-    <div className="dark:bg-gray-800  bg-[#010e28] [background-image:linear-gradient(to_bottom,_#082740_1px,_transparent_1px),linear-gradient(to_right,_#082740_1px,_transparent_1px)] [background-size:30px_30px,30px_30px] bg-center animate-bgmove text-white">
+    <div className="dark:bg-[#010e28] bg-white [background-image:linear-gradient(to_bottom,_#082740_1px,_transparent_1px),linear-gradient(to_right,_#082740_1px,_transparent_1px)] [background-size:30px_30px,30px_30px] bg-center animate-bgmove text-white">
       <NavBar /> 
       <Hero />
       <About />

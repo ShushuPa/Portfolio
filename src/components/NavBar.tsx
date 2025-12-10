@@ -13,7 +13,7 @@ export default function NavBar() {
  const { i18n } = useTranslation();
 
  return (
-        <nav className="p-4 dark:bg-gray-800 flex justify-between items-center">
+        <nav className="p-4 bg-transparent flex justify-between items-center fixed top-0 left-0 right-0 z-50">
             <NavLink to="/">
                 <img src={theme ? Home_Light : Home_Dark} alt="Home" width="30" height="30" className="ml-12 cursor-pointer"/>
             </NavLink>
