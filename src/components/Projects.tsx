@@ -29,12 +29,12 @@ export default function Projects() {
 
     return (
         <section className="py-20 px-4 md:px-8">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-6xl mx-auto p-6 md:p-10 rounded-lg border border-border/50 bg-background/70 backdrop-blur-sm">
                 <div className="mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Projects</h2>
                     <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-transparent rounded-full"></div>
                 </div>
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid md:grid-cols-2 gap-8 text-white">
                     {projectsData.map((project, index) => (
                         <div 
                             key={index} 

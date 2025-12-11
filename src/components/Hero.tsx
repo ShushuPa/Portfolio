@@ -8,13 +8,13 @@ export default function Hero() {
         <div>
             <section className="min-h-screen flex flex-col items-center justify-center">
                 <div>
-                    <img src={Yo} alt="Foto Perfil" width={200} height={200} className="aspect-square rounded-full object-cover border-radius border-2 border-gray-800 dark:border-gray-300"/>
+                    <img src={Yo} alt="Foto Perfil" width={200} height={200} className="aspect-square rounded-full object-cover border-radius border-2 border-black dark:border-gray-300"/>
                 </div>
                 <div>
-                    <h1 className="text-4xl font-bold mb-4 dark:text-white text-gray-800">Pablo Maitini</h1>
+                    <h1 className="text-4xl font-bold mb-4 dark:text-white text-black">Pablo Maitini</h1>
                 </div>
                 <div>
-                    <h2 className="text-2xl font-bold mb-6 dark:text-gray-300 text-gray-500">{t("home.title")}</h2>
+                    <h2 className="text-2xl font-bold mb-6 dark:text-gray-300 text-gray-800">{t("home.title")}</h2>
                 </div>
             </section>
         </div> 

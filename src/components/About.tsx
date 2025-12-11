@@ -2,7 +2,7 @@ export default function About() {
   return (
    <section className="py-20 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start text-white">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start p-6 md:p-10 rounded-lg border border-border/50 bg-background/70 backdrop-blur-sm">
               {/* Left side - "About" heading */}
             <div className="flex flex-col justify-start">
               <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">

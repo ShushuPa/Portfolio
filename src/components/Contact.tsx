@@ -66,7 +66,7 @@ export default function Contact() {
   return (
     <section className="py-20 px-4 md:px-8 bg-background" id="contact">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start p-6 md:p-10 rounded-lg border border-border/50 bg-background/70 backdrop-blur-sm">
           <div className="order-1 md:order-2">
              <div className="mb-8">
                 <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
@@ -81,12 +81,12 @@ export default function Contact() {
              </p>
 
              <div className="bg-slate-800/50 p-4 rounded-lg border border-slate-700 hover:border-blue-500 transition-colors duration-300">
-                <p className="text-sm text-gray-400 mb-2">Send me an email directly:</p>
+                <p className="text-sm dark:text-gray-400 text-white mb-2">Send me an email directly:</p>
                 <div className="flex items-center justify-between bg-slate-900 rounded px-4 py-3">
                     <span className="text-blue-100 font-mono text-sm md:text-base">{myEmail}</span>
                     <button 
                       onClick={handleCopyEmail}
-                      className="text-gray-400 hover:text-white transition-colors"
+                      className="text-gray-400 hover:text-white transition-colors cursor-pointer"
                       title="Copy to clipboard"
                     >
                         {copied ? (
@@ -188,7 +188,6 @@ export default function Contact() {
               </div>
             </form>
           </div>
-
         </div>
       </div>
     </section>

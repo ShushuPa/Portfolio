@@ -24,7 +24,7 @@ export default function Experience() {
   return (
     <section className="py-20 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start p-6 md:p-10 rounded-lg border border-border/50 bg-background/70 backdrop-blur-sm">
             {/* <CHANGE> Mobile-first: Content appears above timeline on mobile, timeline on left and title on right on desktop */}
             <div className="order-2 md:order-1">
               {/* Left side - Experience Content */}
