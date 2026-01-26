@@ -46,8 +46,7 @@ export default function Contact() {
         const templateParams = {
             from_name: formData.name,
             from_email: formData.email,
-            message: formData.message,
-            to_name: 'Tu Nombre', 
+            message: formData.message, 
         };
 
         await emailjs.send(serviceId, templateId, templateParams, publicKey);
