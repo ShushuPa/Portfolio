@@ -1,23 +1,39 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext, createContext, type ReactNode } from "react";
 
-export default function useTheme() {
-  const [theme, setTheme] = useState("dark");
+interface ThemeCtx {
+  theme: string;
+  toggleTheme: () => void;
+}
+
+const ThemeContext = createContext<ThemeCtx | undefined>(undefined);
+
+export function ThemeProvider({ children }: { children: ReactNode }) {
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") ?? "dark";
+  });
 
   useEffect(() => {
-    applyTheme(theme);
-  }, [theme]); 
-
-  const applyTheme = (value: string) => {
-    if (value === "dark") {
+    if (theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
-  };
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   const toggleTheme = () => {
     setTheme(prev => (prev === "dark" ? "" : "dark"));
   };
 
-  return { theme, toggleTheme };
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
+}
+
+export default function useTheme() {
+  const ctx = useContext(ThemeContext);
+  if (!ctx) throw new Error("useTheme must be used inside <ThemeProvider>");
+  return ctx;
 }

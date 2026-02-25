@@ -1,5 +1,5 @@
 export default function Button({label}: {label: string}) {
  return (
-        <button type="button" className="px-4 py-2 bg-sky-950 text-white font-bold rounded hover:bg-sky-800 transition cursor-pointer">{label}</button>
+        <button type="button" className="px-6 py-3 md:px-4 md:py-2 dark:bg-sky-950 bg-[#FF833D] text-white font-bold rounded-lg dark:hover:bg-sky-800 hover:bg-[#e5732f] transition cursor-pointer text-base md:text-sm">{label}</button>
     );   
 };

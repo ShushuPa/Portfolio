@@ -5,6 +5,31 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --color-background: #EBE9E9;
+  --color-foreground: #131360;
+  --color-primary: #2577FF;
+  --color-border: #c2c0c0;
+  --color-muted-foreground: #4a4a80;
+  --color-accent: #FF833D;
+  --color-accent-green: #277D09;
+}
+
+:root {
+  --dot-color: #9190b8;
+}
+
+.dark {
+  --color-background: #010e28;
+  --color-foreground: #ffffff;
+  --color-primary: #60a5fa;
+  --color-border: #1e3a5f;
+  --color-muted-foreground: #94a3b8;
+  --color-accent: #FF833D;
+  --color-accent-green: #277D09;
+  --dot-color: #94a3b8;
+}
+
 @keyframes bgmove {
     0% {
     background-position: 0 0, 0 0;

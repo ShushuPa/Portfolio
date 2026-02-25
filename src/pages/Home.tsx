@@ -11,7 +11,7 @@ export default function Home() {
     <div className="relative w-full h-screen transition overflow-hidden">
       <NavBar />
       <DotGrid />
-      <section className="min-h-screen flex flex-col items-center justify-center md:flex-row md:items-center md:justify-center">
+      <section className="min-h-screen flex flex-col items-center justify-center gap-4 px-4 md:flex-row md:items-center md:justify-center">
         <div className="m-8">
         <NavLink to="/landing" onClick={() => i18n.changeLanguage("en")}>
             <Buttons label={"Click Here"}/>

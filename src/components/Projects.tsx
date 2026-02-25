@@ -28,19 +28,19 @@ export default function Projects() {
     ];
 
     return (
-        <section className="py-20 px-4 md:px-8">
-            <div className="max-w-6xl mx-auto p-6 md:p-10 rounded-lg border border-border/50 bg-background/70 backdrop-blur-sm">
+        <section id="projects" className="py-20 px-4 md:px-8 scroll-mt-20">
+            <div className="max-w-6xl mx-auto p-6 md:p-10 rounded-lg border border-border/50 bg-background/40 backdrop-blur-sm">
                 <div className="mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Projects</h2>
-                    <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-transparent rounded-full"></div>
+                    <div className="w-20 h-1 dark:bg-gradient-to-r dark:from-blue-400 dark:to-transparent bg-gradient-to-r from-[#FF833D] to-transparent rounded-full"></div>
                 </div>
-                <div className="grid md:grid-cols-2 gap-8 text-white">
+                <div className="grid md:grid-cols-2 gap-8 dark:text-white text-[#131360]">
                     {projectsData.map((project, index) => (
                         <div 
                             key={index} 
-                            className="bg-slate-800 rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                            className="dark:bg-slate-800 bg-white rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
                         >
-                            <div className="h-64 bg-slate-700">
+                            <div className="h-64 dark:bg-slate-700 bg-[#EBE9E9]">
                             <Swiper
                                 spaceBetween={0}
                                 centeredSlides={true}
@@ -63,8 +63,8 @@ export default function Projects() {
                                 <div className="absolute top-4 right-4 z-10">
                                     <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
                                         project.status === 'In Progress'
-                                            ? 'bg-blue-900 text-blue-200'
-                                            : 'bg-gray-700 text-gray-200'
+                                            ? 'dark:bg-blue-900 bg-[#2577FF] dark:text-blue-200 text-white'
+                                            : 'dark:bg-gray-700 bg-gray-200 dark:text-gray-200 text-[#131360]'
                                     }`}>
                                         {project.status}
                                     </span>
@@ -74,9 +74,9 @@ export default function Projects() {
                             
                             <div className="p-6">
                                 <h3 className="text-2xl font-bold mb-3">{project.title}</h3>
-                                <p className="text-gray-300 mb-4 leading-relaxed">{project.description}</p>
-                                <div className="pt-4 border-t border-gray-700">
-                                    <p className="text-sm text-gray-400">
+                                <p className="dark:text-gray-300 text-[#131360]/70 mb-4 leading-relaxed">{project.description}</p>
+                                <div className="pt-4 border-t dark:border-gray-700 border-[#c2c0c0]">
+                                    <p className="text-sm dark:text-gray-400 text-[#131360]/60">
                                         <span className="font-semibold">Tech Stack:</span> {project.tech}
                                     </p>
                                 </div>

@@ -1,14 +1,14 @@
 export default function About() {
   return (
-   <section className="py-20 px-4 bg-background">
+   <section id="about" className="py-20 px-4 scroll-mt-20">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start p-6 md:p-10 rounded-lg border border-border/50 bg-background/70 backdrop-blur-sm">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start p-6 md:p-10 rounded-lg border border-border/50 bg-background/40 backdrop-blur-sm">
               {/* Left side - "About" heading */}
             <div className="flex flex-col justify-start">
               <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
                   About
               </h2>
-                <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-transparent rounded-full"></div>
+                <div className="w-20 h-1 dark:bg-gradient-to-r dark:from-blue-400 dark:to-transparent bg-gradient-to-r from-[#FF833D] to-transparent rounded-full"></div>
             </div>
 
               {/* Right side - Content */}

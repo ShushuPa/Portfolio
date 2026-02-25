@@ -63,15 +63,15 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-20 px-4 md:px-8 bg-background" id="contact">
+    <section className="py-20 px-4 md:px-8 scroll-mt-20" id="contact">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start p-6 md:p-10 rounded-lg border border-border/50 bg-background/70 backdrop-blur-sm">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start p-6 md:p-10 rounded-lg border border-border/50 bg-background/40 backdrop-blur-sm">
           <div className="order-1 md:order-2">
              <div className="mb-8">
                 <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
                   Get in Touch
                 </h2>
-                <div className="w-20 h-1 bg-gradient-to-l from-blue-400 to-transparent rounded-full"></div>
+                <div className="w-20 h-1 dark:bg-gradient-to-l dark:from-blue-400 dark:to-transparent bg-gradient-to-l from-[#FF833D] to-transparent rounded-full"></div>
              </div>
 
              <p className="text-muted-foreground mb-8 leading-relaxed">
@@ -79,13 +79,13 @@ export default function Contact() {
                 a proposal, or just want to say hi, I'll try my best to get back to you!
              </p>
 
-             <div className="bg-slate-800/50 p-4 rounded-lg border border-slate-700 hover:border-blue-500 transition-colors duration-300">
-                <p className="text-sm dark:text-gray-400 text-white mb-2">Send me an email directly:</p>
-                <div className="flex items-center justify-between bg-slate-900 rounded px-4 py-3">
-                    <span className="text-blue-100 font-mono text-sm md:text-base">{myEmail}</span>
+             <div className="dark:bg-slate-800/50 bg-white/70 p-4 rounded-lg border dark:border-slate-700 border-[#c2c0c0] hover:border-[#2577FF] dark:hover:border-blue-500 transition-colors duration-300">
+                <p className="text-sm dark:text-gray-400 text-[#131360]/70 mb-2">Send me an email directly:</p>
+                <div className="flex items-center justify-between dark:bg-slate-900 bg-[#EBE9E9] rounded px-3 py-3 gap-2">
+                    <span className="dark:text-blue-100 text-[#2577FF] font-mono text-xs sm:text-sm md:text-base truncate">{myEmail}</span>
                     <button 
                       onClick={handleCopyEmail}
-                      className="text-gray-400 hover:text-white transition-colors cursor-pointer"
+                      className="dark:text-gray-400 text-[#131360]/50 hover:text-[#2577FF] dark:hover:text-white transition-colors cursor-pointer"
                       title="Copy to clipboard"
                     >
                         {copied ? (
@@ -102,11 +102,11 @@ export default function Contact() {
              </div>
           </div>
           <div className="order-2 md:order-1">
-            <form onSubmit={handleSubmit} className="bg-slate-800 p-8 rounded-2xl shadow-xl border border-slate-700/50">
+            <form onSubmit={handleSubmit} className="dark:bg-slate-800 bg-white p-8 rounded-2xl shadow-xl border dark:border-slate-700/50 border-[#c2c0c0]">
               <div className="space-y-6">
                 
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium dark:text-gray-300 text-[#131360] mb-2">
                     Name
                   </label>
                   <input
@@ -116,13 +116,13 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-white placeholder-gray-500"
+                    className="w-full px-4 py-3 dark:bg-slate-900 bg-[#EBE9E9] border dark:border-slate-700 border-[#c2c0c0] rounded-lg focus:ring-2 focus:ring-[#2577FF] dark:focus:ring-blue-500 focus:border-transparent outline-none transition-all dark:text-white text-[#131360] dark:placeholder-gray-500 placeholder-[#131360]/40"
                     placeholder="John Doe"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium dark:text-gray-300 text-[#131360] mb-2">
                     Email
                   </label>
                   <input
@@ -132,13 +132,13 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-white placeholder-gray-500"
+                    className="w-full px-4 py-3 dark:bg-slate-900 bg-[#EBE9E9] border dark:border-slate-700 border-[#c2c0c0] rounded-lg focus:ring-2 focus:ring-[#2577FF] dark:focus:ring-blue-500 focus:border-transparent outline-none transition-all dark:text-white text-[#131360] dark:placeholder-gray-500 placeholder-[#131360]/40"
                     placeholder="john@example.com"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium dark:text-gray-300 text-[#131360] mb-2">
                     Message
                   </label>
                   <textarea
@@ -148,7 +148,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     rows={4}
-                    className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-white placeholder-gray-500 resize-none"
+                    className="w-full px-4 py-3 dark:bg-slate-900 bg-[#EBE9E9] border dark:border-slate-700 border-[#c2c0c0] rounded-lg focus:ring-2 focus:ring-[#2577FF] dark:focus:ring-blue-500 focus:border-transparent outline-none transition-all dark:text-white text-[#131360] dark:placeholder-gray-500 placeholder-[#131360]/40 resize-none"
                     placeholder="Your message..."
                   ></textarea>
                 </div>
@@ -158,8 +158,8 @@ export default function Contact() {
                   disabled={isSubmitting}
                   className={`w-full py-3.5 rounded-lg font-bold text-white transition-all duration-300 transform hover:-translate-y-1 ${
                     isSubmitting 
-                      ? 'bg-blue-800 cursor-not-allowed' 
-                      : 'bg-gradient-to-r from-blue-600 to-blue-500 hover:shadow-lg hover:shadow-blue-500/25'
+                      ? 'dark:bg-blue-800 bg-[#2577FF]/60 cursor-not-allowed' 
+                      : 'dark:bg-gradient-to-r dark:from-blue-600 dark:to-blue-500 bg-gradient-to-r from-[#FF833D] to-[#2577FF] hover:shadow-lg dark:hover:shadow-blue-500/25 hover:shadow-[#FF833D]/25'
                   }`}
                 >
                   {isSubmitting ? (

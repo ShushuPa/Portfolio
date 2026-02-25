@@ -33,7 +33,8 @@ export default function DotGrid({ spacing = 71, size = 3, influenceRadius = 100 
       framePending.current = false;
       const points = pointsRef.current;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = "#94a3b8";
+      const dotColor = getComputedStyle(document.documentElement).getPropertyValue('--dot-color').trim() || "#94a3b8";
+      ctx.fillStyle = dotColor;
       const mouse = mouseRef.current;
       const hasMouse = !!mouse;
       points.forEach(p => {
@@ -94,7 +95,7 @@ export default function DotGrid({ spacing = 71, size = 3, influenceRadius = 100 
   return (
     <canvas
       ref={canvasRef}
-      className="pointer-events-none absolute inset-0 -z-10 overflow-hidden dark:bg-[#010e28] bg-white"
+      className="pointer-events-none absolute inset-0 -z-10 overflow-hidden dark:bg-[#010e28] bg-[#EBE9E9]"
     />
   );
 }
