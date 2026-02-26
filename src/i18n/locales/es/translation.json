@@ -6,8 +6,34 @@
     "projects": "Proyectos",
     "contact": "Contacto"
   },
-  "home": {
-    "title": "Desarrollador de Software",
-    "subtitle": "¡Versión en español!"
+  "hero": {
+    "title": "Desarrollador de Software"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Soy Desarrollador de Software con experiencia en backend, frontend e integraciones de sistemas empresariales. Soy Técnico Universitario en Desarrollo Web (UNLaM) y he participado en proyectos internacionales para Estados Unidos y Argentina, desarrollando soluciones principalmente con SQL y PeopleSoft Tools. Mi perfil combina experiencia en entornos corporativos con el desarrollo de aplicaciones web modernas. Trabajo con tecnologías como Node.js, React, Prisma y MySQL, enfocándome en construir soluciones escalables, bien estructuradas y orientadas a la experiencia del usuario. Me interesa crecer como Full Stack Developer, fortaleciendo tanto la arquitectura de sistemas como la calidad del código. Me destaco por mi capacidad de adaptación, pensamiento analítico y trabajo en equipo bajo metodologías ágiles. Busco desarrollar productos técnicamente sólidos que generen impacto real, combinando lógica de negocio, buenas prácticas y una mentalidad de mejora continua.",
+    "skills": "Tecnologías Clave"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "description": "A lo largo de mi trayectoria profesional he tenido la oportunidad de participar en distintos proyectos y colaborar con equipos diversos. Cada experiencia ha sido una instancia de aprendizaje que fortaleció mi forma de analizar problemas, diseñar soluciones y pensar el desarrollo más allá del código.",
+    "items": [
+      {
+        "date": "Abril 2022",
+        "title": "Desarrollador Peoplesoft",
+        "company": "Abtio",
+        "description": "Desarrollé y mantuve aplicaciones web utilizando Peopletools Kit Development, mejorando el rendimiento en un 40%."
+      },
+      {
+        "date": "Marzo 2021",
+        "title": "Estudiante de Desarrollo Web",
+        "company": "Universidad Nacional de La Matanza",
+        "description": "Realicé prácticas profesionales en el área de desarrollo web, participando en proyectos académicos y colaborando con compañeros en la creación de aplicaciones utilizando tecnologías como HTML, CSS, JavaScript, JAVA, PHP y SQL."
+      }
+    ]
+  },
+  "proyectos": {
+    "title": "Tipear",
+    "subtitle": "Versión en español"
   }
 }

@@ -68,7 +68,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start p-6 md:p-10 rounded-lg border border-border/50 bg-background/40 backdrop-blur-sm">
           <div className="order-1 md:order-2">
              <div className="mb-8">
-                <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+                <h2 className="text-4xl md:text-5xl font-bold text-primary dark:text-white mb-4">
                   Get in Touch
                 </h2>
                 <div className="w-20 h-1 dark:bg-gradient-to-l dark:from-blue-400 dark:to-transparent bg-gradient-to-l from-[#FF833D] to-transparent rounded-full"></div>

@@ -6,10 +6,33 @@
     "projects": "Projects",
     "contact": "Contact"
   },
-  "home": {
+  "hero": {
     "title": "Software Developer"
   },
-  "Projects": {
+  "about": {
+    "title": "About",
+    "description": "I’m a Software Developer with experience in backend, frontend, and enterprise system integrations. I hold a University Degree in Web Development (UNLaM) and have worked on international projects for the United States and Argentina, building solutions primarily using SQL and PeopleSoft Tools. My profile combines corporate environment experience with modern web application development. I work with technologies such as Node.js, React, Prisma, and MySQL, focusing on building scalable, well-structured, and user-oriented solutions. I’m interested in growing as a Full Stack Developer, strengthening both system architecture and code quality. I stand out for my adaptability, analytical thinking, and ability to work effectively in agile teams. My goal is to build technically solid products that create real impact, combining business logic, best practices, and a continuous improvement mindset.",
+    "skills": "Key Skills"
+  },
+  "experience": {
+    "title": "Experience",
+    "description": "Throughout my career, I've had the opportunity to work on diverse projects and collaborate with talented teams. Each experience has been a learning opportunity that contributed to my growth as a developer and shaped my approach to analyze problems, design solutions, and think about development beyond just the code.",
+    "items": [
+      {
+        "date": "April 2022",
+        "title": "Peoplesoft Developer",
+        "company": "Abtio",
+        "description": "Developed and maintained web applications using Peopletools Kit Development, improving performance by 40%."
+      },
+      {
+        "date": "March 2021",
+        "title": "Web Development Student",
+        "company": "Universidad Nacional de La Matanza",
+        "description": "I completed professional practices in the web development area, participating in academic projects and collaborating with colleagues in creating applications using technologies such as HTML, CSS, JavaScript, JAVA, PHP and SQL."
+      }
+    ]
+  },             
+    "projects": {
     "title": "Tipear",
     "subtitle": "English Version!"
   }

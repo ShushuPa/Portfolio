@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 interface ExperienceItem {
   date: string
   title: string
@@ -5,22 +7,9 @@ interface ExperienceItem {
   description: string
 }
 
-const experienceData: ExperienceItem[] = [
-  {
-    date: 'April 2022',
-    title: 'Peoplesoft Developer',
-    company: 'Abtio',
-    description: 'Developed and maintained web applications using Peopletools Kit Development, improving performance by 40%.',
-  },
-  {
-    date: 'December 2025',
-    title: '',
-    company: 'Innovation Labs',
-    description: 'Led a team of 5 developers, architected microservices, and implemented CI/CD pipelines.',
-  },
-]
-
 export default function Experience() {
+  const { t } = useTranslation();
+  const experienceData = t("experience.items", { returnObjects: true }) as ExperienceItem[];
   return (
     <section id="experience" className="py-20 px-4 scroll-mt-20">
       <div className="max-w-6xl mx-auto">
@@ -53,14 +42,12 @@ export default function Experience() {
               {/* <CHANGE> Experience title appears below timeline on mobile, on the right on desktop */}
               <div className="order-1 md:order-2">
                 <div className="flex flex-col justify-start items-start">
-                  <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 ">
-                    Experience
+                  <h2 className="text-4xl md:text-5xl font-bold text-primary dark:text-white mb-4 ">
+                    {t("experience.title")}
                   </h2>
                   <div className="w-20 h-1 dark:bg-gradient-to-l dark:from-blue-400 dark:to-transparent bg-gradient-to-l from-[#FF833D] to-transparent rounded-full"></div>
                   <p className="text-muted-foreground mt-6 leading-relaxed">
-                    Throughout my career, I've had the opportunity to work on diverse projects 
-                    and collaborate with talented teams. Each experience has contributed to my 
-                    growth as a developer and shaped my approach to problem-solving.
+                    {t("experience.description")}
                   </p>
                 </div>
               </div>

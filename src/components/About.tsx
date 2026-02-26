@@ -1,12 +1,16 @@
+import { useTranslation } from "react-i18next";
+
 export default function About() {
+  const { t } = useTranslation();
+
   return (
    <section id="about" className="py-20 px-4 scroll-mt-20">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start p-6 md:p-10 rounded-lg border border-border/50 bg-background/40 backdrop-blur-sm">
               {/* Left side - "About" heading */}
             <div className="flex flex-col justify-start">
-              <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-                  About
+              <h2 className="text-4xl md:text-5xl font-bold text-primary dark:text-white mb-4">
+                  {t("about.title")}
               </h2>
                 <div className="w-20 h-1 dark:bg-gradient-to-r dark:from-blue-400 dark:to-transparent bg-gradient-to-r from-[#FF833D] to-transparent rounded-full"></div>
             </div>
@@ -14,18 +18,12 @@ export default function About() {
               {/* Right side - Content */}
               <div className="space-y-6">
                 <p className="text-lg text-foreground/90 leading-relaxed">
-                  I'm a passionate software developer with a keen interest in creating elegant solutions to complex problems. With years of experience in full-stack development, I specialize in building scalable and user-friendly applications.
-                </p>
-                <p className="text-lg text-foreground/90 leading-relaxed">
-                  My expertise spans across modern web technologies, cloud infrastructure, and DevOps practices. I'm committed to continuous learning and staying updated with the latest industry trends and best practices.
-                </p>
-                <p className="text-lg text-foreground/90 leading-relaxed">
-                  When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.
+                  {t("about.description")}
                 </p>
                 
                 {/* Skills */}
                 <div className="pt-4">
-                  <h3 className="text-xl font-semibold text-primary mb-4">Key Skills</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-4">{t("about.skills")}</h3>
                   <div className="flex flex-wrap gap-3">
                     {['React', 'Next.js', 'TypeScript', 'Node.js', 'PostgreSQL', 'Tailwind CSS'].map((skill) => (
                       <span

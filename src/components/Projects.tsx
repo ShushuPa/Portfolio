@@ -31,7 +31,7 @@ export default function Projects() {
         <section id="projects" className="py-20 px-4 md:px-8 scroll-mt-20">
             <div className="max-w-6xl mx-auto p-6 md:p-10 rounded-lg border border-border/50 bg-background/40 backdrop-blur-sm">
                 <div className="mb-12">
-                    <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Projects</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold text-primary dark:text-white mb-4">Projects</h2>
                     <div className="w-20 h-1 dark:bg-gradient-to-r dark:from-blue-400 dark:to-transparent bg-gradient-to-r from-[#FF833D] to-transparent rounded-full"></div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-8 dark:text-white text-[#131360]">
