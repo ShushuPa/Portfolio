@@ -74,5 +74,9 @@
     "sending": "Sending...",
     "successMessage": "Message sent successfully! I'll get back to you soon.",
     "errorMessage": "Something went wrong. Please try again later."
+  },
+  "common": {
+    "readMore": "Read More",
+    "hide": "Hide"
   }
 }

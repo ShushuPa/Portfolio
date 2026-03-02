@@ -74,5 +74,9 @@
     "sending": "Enviando...",
     "successMessage": "¡Mensaje enviado con éxito! Te responderé pronto.",
     "errorMessage": "Algo salió mal. Por favor, inténtalo de nuevo más tarde."
+  },
+  "common": {
+    "readMore": "Leer más",
+    "hide": "Ocultar"
   }
 }

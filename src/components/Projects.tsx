@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { useTranslation } from "react-i18next";
+import ExpandableText from './ExpandableText';
 
 interface ProjectsItem {
   title: string
@@ -65,7 +66,11 @@ export default function Projects() {
                             
                             <div className="p-6">
                                 <h3 className="text-2xl font-bold mb-3">{project.title}</h3>
-                                <p className="dark:text-gray-300 text-[#131360]/70 mb-4 leading-relaxed">{project.description}</p>
+                                <ExpandableText
+                                    text={project.description}
+                                    className="dark:text-gray-300 text-[#131360]/70 mb-2 leading-relaxed"
+                                    buttonClassName="mb-4"
+                                />
                                 <div className="pt-4 border-t dark:border-gray-700 border-[#c2c0c0]">
                                     <p className="text-sm dark:text-gray-400 text-[#131360]/60">
                                         <span className="font-semibold">{t("projects.subtitle")}:</span> {project.stack}
