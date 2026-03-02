@@ -25,7 +25,7 @@ export default function About() {
                 <div className="pt-4">
                   <h3 className="text-xl font-semibold text-primary mb-4">{t("about.skills")}</h3>
                   <div className="flex flex-wrap gap-3">
-                    {['React', 'Next.js', 'TypeScript', 'Node.js', 'PostgreSQL', 'Tailwind CSS'].map((skill) => (
+                    {['React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'MySQL', 'Oracle SQL Developer'].map((skill) => (
                       <span
                         key={skill}
                         className="px-4 py-2 bg-primary/10 border border-primary/30 text-primary rounded-lg text-sm font-medium hover:bg-primary/20 transition-colors"
