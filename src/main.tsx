@@ -1,4 +1,3 @@
-import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from "react-router";
 import './styles/Home.css';
@@ -8,7 +7,6 @@ import "./i18n/index.js";
 import { ThemeProvider } from './hooks/useTheme.tsx';
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
     <ThemeProvider>
       <BrowserRouter>
         <Routes>
@@ -17,5 +15,4 @@ createRoot(document.getElementById('root')!).render(
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
-  </StrictMode>,
 )

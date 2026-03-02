@@ -19,21 +19,60 @@
     "description": "Throughout my career, I've had the opportunity to work on diverse projects and collaborate with talented teams. Each experience has been a learning opportunity that contributed to my growth as a developer and shaped my approach to analyze problems, design solutions, and think about development beyond just the code.",
     "items": [
       {
-        "date": "April 2022",
+        "date": "April 2022 - Present",
         "title": "Peoplesoft Developer",
         "company": "Abtio",
         "description": "Developed and maintained web applications using Peopletools Kit Development, improving performance by 40%."
       },
       {
-        "date": "March 2021",
+        "date": "March 2021 - November 2024",
         "title": "Web Development Student",
         "company": "Universidad Nacional de La Matanza",
         "description": "I completed professional practices in the web development area, participating in academic projects and collaborating with colleagues in creating applications using technologies such as HTML, CSS, JavaScript, JAVA, PHP and SQL."
       }
     ]
-  },             
-    "projects": {
-    "title": "Tipear",
-    "subtitle": "English Version!"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Tech Stack",
+    "items": [
+      {
+        "title": "Tipear",
+        "description": "Tipear is a web-based educational application designed to improve spelling and expand vocabulary among secondary school students through interactive game dynamics. The platform combines single-player and real-time multiplayer modes, incorporating engaging mechanics that promote active learning and healthy competition. It also includes teacher-focused features, allowing it to be effectively integrated into classroom environments. The project was developed with a strong focus on performance, scalability, and delivering a smooth user experience across both mobile and desktop devices.",
+        "stack": "React, Vite, Tailwind CSS. Node.js, Express, Socket.IO, Prisma, MySQL. Railway (frontend, backend, and database deployment), GitHub (version control and continuous integration).",
+        "status": "Inactive",
+        "images": [
+          "https://flowbite.com/docs/images/carousel/carousel-1.svg",
+          "https://flowbite.com/docs/images/carousel/carousel-2.svg", 
+          "https://flowbite.com/docs/images/carousel/carousel-3.svg"
+        ]
+      },
+      {
+        "title": "Love Español",
+        "description": "Love Español is a web-based platform focused on promoting and selling Spanish language courses. The project combines a modern informational website with a structured online course sales system, prioritizing clarity, user experience, and conversion optimization. The frontend is built with a modern stack to ensure performance, responsiveness, and maintainable architecture. The platform integrates secure online payments and connects with a learning management system (LMS) to handle course delivery, student management, and academic content distribution. The main goal of the project is to provide a scalable and professional solution for managing, selling, and delivering digital courses by combining marketing, technology, and education into a single ecosystem.",
+        "stack": "React, Vite, Tailwind CSS, Stripe (secure online payment integration), Hostinger (hosting and deployment), GoDaddy (domain management), Moodle LMS (course and learning management system)",
+        "status": "In Progress",
+        "images": [
+          "https://flowbite.com/docs/images/carousel/carousel-1.svg",
+          "https://flowbite.com/docs/images/carousel/carousel-2.svg", 
+          "https://flowbite.com/docs/images/carousel/carousel-3.svg"
+        ]
+      }
+    ]
+  },
+   "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Send me an email directly:",
+    "description": "I'm currently looking for new opportunities. Whether you have a question, a proposal, or just want to say hi, I'll try my best to get back to you!",
+    "name": "Name",
+    "namePlaceholder": "John Doe",
+    "email": "Email",
+    "emailPlaceholder": "john.doe@example.com",
+    "message": "Message",
+    "messagePlaceholder": "Write your message here...",
+    "sendButton": "Send Message",
+    "sending": "Sending...",
+    "successMessage": "Message sent successfully! I'll get back to you soon.",
+    "errorMessage": "Something went wrong. Please try again later."
   }
 }

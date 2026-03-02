@@ -19,21 +19,60 @@
     "description": "A lo largo de mi trayectoria profesional he tenido la oportunidad de participar en distintos proyectos y colaborar con equipos diversos. Cada experiencia ha sido una instancia de aprendizaje que fortaleció mi forma de analizar problemas, diseñar soluciones y pensar el desarrollo más allá del código.",
     "items": [
       {
-        "date": "Abril 2022",
+        "date": "Abril 2022 - Actualidad",
         "title": "Desarrollador Peoplesoft",
         "company": "Abtio",
         "description": "Desarrollé y mantuve aplicaciones web utilizando Peopletools Kit Development, mejorando el rendimiento en un 40%."
       },
       {
-        "date": "Marzo 2021",
+        "date": "Marzo 2021 - Noviembre 2024",
         "title": "Estudiante de Desarrollo Web",
         "company": "Universidad Nacional de La Matanza",
         "description": "Realicé prácticas profesionales en el área de desarrollo web, participando en proyectos académicos y colaborando con compañeros en la creación de aplicaciones utilizando tecnologías como HTML, CSS, JavaScript, JAVA, PHP y SQL."
       }
     ]
   },
-  "proyectos": {
-    "title": "Tipear",
-    "subtitle": "Versión en español"
+ "projects": {
+    "title": "Proyectos",
+    "subtitle": "Tecnologías Utilizadas",
+    "items": [
+      {
+        "title": "Tipear",
+        "description": "Tipear es una aplicación web educativa enfocada en mejorar la ortografía y ampliar el vocabulario en estudiantes jugando. La plataforma combina modos individuales y multijugador en tiempo real, incorporando mecánicas lúdicas que fomentan el aprendizaje activo y la competencia saludable. Además, incluye funcionalidades específicas para docentes, permitiendo un uso didáctico dentro del aula. El proyecto fue desarrollado priorizando rendimiento, escalabilidad y una experiencia de usuario fluida tanto en dispositivos móviles como en escritorio.",
+        "stack": "React, Vite, Tailwind CSS. Node.js, Express, Socket.IO, Prisma, MySQL. Railway (deploy de frontend, backend y base de datos), GitHub (control de versiones e integración continua).",
+        "status": "Inactive",
+        "images": [
+          "https://flowbite.com/docs/images/carousel/carousel-1.svg",
+          "https://flowbite.com/docs/images/carousel/carousel-2.svg", 
+          "https://flowbite.com/docs/images/carousel/carousel-3.svg"
+        ]
+      },
+      {
+        "title": "Love Español",
+        "description": "Love Español es una plataforma web orientada a la venta y difusión de cursos de español. El proyecto combina una página informativa moderna con un sistema de comercialización de cursos online, enfocándose en una experiencia clara y atractiva. La aplicación está desarrollada con una arquitectura moderna en el frontend, priorizando rendimiento, diseño responsive y buenas prácticas de desarrollo. Además, integra un sistema de pagos seguro para la compra de cursos y se conecta con un LMS para la gestión académica y distribución del contenido. El objetivo del proyecto es construir una solución escalable que permita administrar, vender y distribuir cursos digitales de manera profesional, combinando marketing, tecnología y educación en una misma plataforma.",
+        "stack": "React, Vite, Tailwind CSS, Stripe (integración de pagos online), Infraestructura & Hosting, Hostinger (hosting y despliegue), GoDaddy (gestión de dominio), Moodle LMS (gestión de cursos y contenidos educativos)",
+        "status": "In Progress",
+        "images": [
+          "https://flowbite.com/docs/images/carousel/carousel-1.svg",
+          "https://flowbite.com/docs/images/carousel/carousel-2.svg", 
+          "https://flowbite.com/docs/images/carousel/carousel-3.svg"
+        ]
+      }
+    ]
+  },
+   "contact": {
+    "title": "Contacto",
+    "subtitle": "Escríbeme directamente a:",
+    "description": "Actualmente estoy buscando nuevas oportunidades. Si tienes alguna pregunta, propuesta o simplemente quieres saludarme, haré lo posible por responderte pronto.",
+    "name": "Nombre",
+    "namePlaceholder": "Juan Pérez",
+    "email": "Email",
+    "emailPlaceholder": "juan@ejemplo.com",
+    "message": "Mensaje",
+    "messagePlaceholder": "Escribe tu mensaje aquí...",
+    "sendButton": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "successMessage": "¡Mensaje enviado con éxito! Te responderé pronto.",
+    "errorMessage": "Algo salió mal. Por favor, inténtalo de nuevo más tarde."
   }
 }

@@ -1,7 +1,9 @@
 import { useState, type FormEvent } from 'react';
 import emailjs from '@emailjs/browser';
+import { useTranslation } from 'react-i18next';
 
 export default function Contact() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -69,18 +71,17 @@ export default function Contact() {
           <div className="order-1 md:order-2">
              <div className="mb-8">
                 <h2 className="text-4xl md:text-5xl font-bold text-primary dark:text-white mb-4">
-                  Get in Touch
+                  {t("contact.title")}
                 </h2>
                 <div className="w-20 h-1 dark:bg-gradient-to-l dark:from-blue-400 dark:to-transparent bg-gradient-to-l from-[#FF833D] to-transparent rounded-full"></div>
              </div>
 
              <p className="text-muted-foreground mb-8 leading-relaxed">
-                I'm currently looking for new opportunities. Whether you have a question, 
-                a proposal, or just want to say hi, I'll try my best to get back to you!
+                {t("contact.description")}
              </p>
 
              <div className="dark:bg-slate-800/50 bg-white/70 p-4 rounded-lg border dark:border-slate-700 border-[#c2c0c0] hover:border-[#2577FF] dark:hover:border-blue-500 transition-colors duration-300">
-                <p className="text-sm dark:text-gray-400 text-[#131360]/70 mb-2">Send me an email directly:</p>
+                <p className="text-sm dark:text-gray-400 text-[#131360]/70 mb-2">{t("contact.subtitle")}</p>
                 <div className="flex items-center justify-between dark:bg-slate-900 bg-[#EBE9E9] rounded px-3 py-3 gap-2">
                     <span className="dark:text-blue-100 text-[#2577FF] font-mono text-xs sm:text-sm md:text-base truncate">{myEmail}</span>
                     <button 
@@ -107,7 +108,7 @@ export default function Contact() {
                 
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium dark:text-gray-300 text-[#131360] mb-2">
-                    Name
+                    {t("contact.name")}
                   </label>
                   <input
                     type="text"
@@ -117,13 +118,13 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 dark:bg-slate-900 bg-[#EBE9E9] border dark:border-slate-700 border-[#c2c0c0] rounded-lg focus:ring-2 focus:ring-[#2577FF] dark:focus:ring-blue-500 focus:border-transparent outline-none transition-all dark:text-white text-[#131360] dark:placeholder-gray-500 placeholder-[#131360]/40"
-                    placeholder="John Doe"
+                    placeholder={t("contact.namePlaceholder")}
                   />
                 </div>
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium dark:text-gray-300 text-[#131360] mb-2">
-                    Email
+                    {t("contact.email")}
                   </label>
                   <input
                     type="email"
@@ -133,13 +134,13 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 dark:bg-slate-900 bg-[#EBE9E9] border dark:border-slate-700 border-[#c2c0c0] rounded-lg focus:ring-2 focus:ring-[#2577FF] dark:focus:ring-blue-500 focus:border-transparent outline-none transition-all dark:text-white text-[#131360] dark:placeholder-gray-500 placeholder-[#131360]/40"
-                    placeholder="john@example.com"
+                    placeholder={t("contact.emailPlaceholder")}
                   />
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium dark:text-gray-300 text-[#131360] mb-2">
-                    Message
+                    {t("contact.message")}
                   </label>
                   <textarea
                     id="message"
@@ -149,7 +150,7 @@ export default function Contact() {
                     required
                     rows={4}
                     className="w-full px-4 py-3 dark:bg-slate-900 bg-[#EBE9E9] border dark:border-slate-700 border-[#c2c0c0] rounded-lg focus:ring-2 focus:ring-[#2577FF] dark:focus:ring-blue-500 focus:border-transparent outline-none transition-all dark:text-white text-[#131360] dark:placeholder-gray-500 placeholder-[#131360]/40 resize-none"
-                    placeholder="Your message..."
+                    placeholder={t("contact.messagePlaceholder")}
                   ></textarea>
                 </div>
 
@@ -168,19 +169,19 @@ export default function Contact() {
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                       </svg>
-                      Sending...
+                      {t("contact.sending")}
                     </span>
-                  ) : 'Send Message'}
+                  ) : t("contact.sendButton")}
                 </button>
 
                 {submitStatus === 'success' && (
                    <p className="text-green-400 text-center text-sm font-medium bg-green-400/10 py-2 rounded">
-                     Message sent successfully! I'll get back to you soon.
+                     {t("contact.successMessage")}
                    </p>
                 )}
                 {submitStatus === 'error' && (
                    <p className="text-red-400 text-center text-sm font-medium bg-red-400/10 py-2 rounded">
-                     Something went wrong. Please try again later.
+                     {t("contact.errorMessage")}
                    </p>
                 )}
 
