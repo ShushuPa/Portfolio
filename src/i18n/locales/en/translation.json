@@ -42,18 +42,18 @@
         "stack": "React, Vite, Tailwind CSS. Node.js, Express, Socket.IO, Prisma, MySQL. Railway (frontend, backend, and database deployment), GitHub (version control and continuous integration).",
         "status": "Inactive",
         "images": [
-          "src/assets/projects-images/tipear-home.webp",
-          "src/assets/projects-images/tipear-juego.webp", 
-          "src/assets/projects-images/tipear-juego2.webp",
-          "src/assets/projects-images/tipear-salas.webp",
-          "src/assets/projects-images/tipear-host.webp",
-          "src/assets/projects-images/tipear-multi.webp",
-          "src/assets/projects-images/tipear-stats.webp",
-          "src/assets/projects-images/tipear-ranking.webp", 
-          "src/assets/projects-images/tipear-edu.webp",
-          "src/assets/projects-images/tipear-edu-host.webp",
-          "src/assets/projects-images/tipear-observer.webp",
-          "src/assets/projects-images/tipear-report.webp"
+          "/projects-images/tipear-home.webp",
+          "/projects-images/tipear-juego.webp", 
+          "/projects-images/tipear-juego2.webp",
+          "/projects-images/tipear-salas.webp",
+          "/projects-images/tipear-host.webp",
+          "/projects-images/tipear-multi.webp",
+          "/projects-images/tipear-stats.webp",
+          "/projects-images/tipear-ranking.webp", 
+          "/projects-images/tipear-edu.webp",
+          "/projects-images/tipear-edu-host.webp",
+          "/projects-images/tipear-observer.webp",
+          "/projects-images/tipear-report.webp"
         ]
       },
       {
@@ -62,11 +62,11 @@
         "stack": "React, Vite, Tailwind CSS, Stripe (secure online payment integration), Hostinger (hosting and deployment), GoDaddy (domain management), Moodle LMS (course and learning management system)",
         "status": "In Progress",
         "images": [
-          "src/assets/projects-images/love-es-home.webp",
-          "src/assets/projects-images/love-es-learn.webp", 
-          "src/assets/projects-images/love-es-hard-work.webp", 
-          "src/assets/projects-images/love-es-love-it.webp", 
-          "src/assets/projects-images/love-es-teachers.webp"
+          "/projects-images/love-es-home.webp",
+          "/projects-images/love-es-learn.webp", 
+          "/projects-images/love-es-hard-work.webp", 
+          "/projects-images/love-es-love-it.webp", 
+          "/projects-images/love-es-teachers.webp"
         ]
       }
     ]
