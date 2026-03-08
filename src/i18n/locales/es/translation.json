@@ -42,9 +42,18 @@
         "stack": "React, Vite, Tailwind CSS. Node.js, Express, Socket.IO, Prisma, MySQL. Railway (deploy de frontend, backend y base de datos), GitHub (control de versiones e integración continua).",
         "status": "Inactive",
         "images": [
-          "https://flowbite.com/docs/images/carousel/carousel-1.svg",
-          "https://flowbite.com/docs/images/carousel/carousel-2.svg", 
-          "https://flowbite.com/docs/images/carousel/carousel-3.svg"
+          "src/assets/projects-images/tipear-home.webp",
+          "src/assets/projects-images/tipear-juego.webp", 
+          "src/assets/projects-images/tipear-juego2.webp",
+          "src/assets/projects-images/tipear-salas.webp",
+          "src/assets/projects-images/tipear-host.webp",
+          "src/assets/projects-images/tipear-multi.webp",
+          "src/assets/projects-images/tipear-stats.webp",
+          "src/assets/projects-images/tipear-ranking.webp", 
+          "src/assets/projects-images/tipear-edu.webp",
+          "src/assets/projects-images/tipear-edu-host.webp",
+          "src/assets/projects-images/tipear-observer.webp",
+          "src/assets/projects-images/tipear-report.webp"
         ]
       },
       {
@@ -53,9 +62,9 @@
         "stack": "React, Vite, Tailwind CSS, Stripe (integración de pagos online), Infraestructura & Hosting, Hostinger (hosting y despliegue), GoDaddy (gestión de dominio), Moodle LMS (gestión de cursos y contenidos educativos)",
         "status": "In Progress",
         "images": [
-          "https://flowbite.com/docs/images/carousel/carousel-1.svg",
-          "https://flowbite.com/docs/images/carousel/carousel-2.svg", 
-          "https://flowbite.com/docs/images/carousel/carousel-3.svg"
+          "src/assets/projects-images/love-español-home.webp",
+          "src/assets/projects-images/love-español-courses.webp", 
+          "src/assets/projects-images/love-español-dashboard.webp"
         ]
       }
     ]
