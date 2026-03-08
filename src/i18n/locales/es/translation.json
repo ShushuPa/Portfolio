@@ -62,9 +62,11 @@
         "stack": "React, Vite, Tailwind CSS, Stripe (integración de pagos online), Infraestructura & Hosting, Hostinger (hosting y despliegue), GoDaddy (gestión de dominio), Moodle LMS (gestión de cursos y contenidos educativos)",
         "status": "In Progress",
         "images": [
-          "src/assets/projects-images/love-español-home.webp",
-          "src/assets/projects-images/love-español-courses.webp", 
-          "src/assets/projects-images/love-español-dashboard.webp"
+          "src/assets/projects-images/love-es-home.webp",
+          "src/assets/projects-images/love-es-learn.webp", 
+          "src/assets/projects-images/love-es-hard-work.webp", 
+          "src/assets/projects-images/love-es-love-it.webp", 
+          "src/assets/projects-images/love-es-teachers.webp"
         ]
       }
     ]
